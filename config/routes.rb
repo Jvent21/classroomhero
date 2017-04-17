@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   
   delete '/logout',  to: 'sessions#destroy'
   
+  resources :microposts,          only: [:create, :destroy]
+  
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
