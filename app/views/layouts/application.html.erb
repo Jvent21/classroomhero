@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield(:title) %>Classroom Hero</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <script>
+    var slideimages1 = new Array();
+	  slideimages1[0] = new Image();
+	  slideimages1[0].src = "<%= asset_path("Class1.jpg")%>";
+	  slideimages1[1] = new Image();
+	  slideimages1[1].src = "<%= asset_path("Class2.jpg")%>";
+	  slideimages1[2] = new Image();
+	  slideimages1[2].src = "<%= asset_path("Class3.jpg")%>";
+    var step=0;
+    var slideimages2 = new Array();
+	  slideimages2[0] = new Image();
+	  slideimages2[0].src = "<%= asset_path("Class2 (2).jpg")%>";
+	  slideimages2[1] = new Image();
+	  slideimages2[1].src = "<%= asset_path("Class4.jpg")%>";
+	  slideimages2[2] = new Image();
+	  slideimages2[2].src = "<%= asset_path("ClassroomHeroProject.png")%>";
+  </script>
+</head>
+<body>
+<%= render 'layouts/header' %>
+<%= yield %>
+<%= render 'layouts/footer' %>
+</body>
+</html>

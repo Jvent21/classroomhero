@@ -1,0 +1,11 @@
+function slideit1()
+{
+	if (!document.images)
+	return;
+	document.getElementById('slide1').src = slideimages1[step].src;
+	if (step<2)
+	step++;
+	else
+	step=0;
+	setTimeout("slideit1()",2500);
+}

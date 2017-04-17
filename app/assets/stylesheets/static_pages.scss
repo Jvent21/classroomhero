@@ -1,0 +1,126 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+div
+{
+    h1
+    {
+        text-align: center;
+        font-size: 40px;
+        color: white;
+    }
+    h2
+    {
+        text-align: center;
+        font-size: 32px;
+        color: white;
+    }
+    p
+    {
+        color: white;
+        font-family: "Georgia";
+    }
+}
+
+.loginlink
+{
+    padding: 12px 28px;
+    border-radius: 8px;
+    transition-duration: 0.5s;
+    border: 20px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    outline-width: 20px;
+    background: black;
+}
+
+button
+{
+    padding: 12px 28px;
+    border-radius: 8px;
+    transition-duration: 0.5s;
+    border: 20px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    outline-width: 20px;
+    background: black;
+    
+}
+
+.loginbutton:hover
+{
+    background-color: white;
+    color: black;
+}
+
+body
+{
+    background-image: url("http://www.publicdomainpictures.net/pictures/110000/velka/chalkboard-or-blackboard.jpg");
+    background-repeat: no-repeat;
+}
+header, footer
+{
+    border-radius: 8px;
+    background-color: black;
+    div
+    {
+        display: inline-block;
+        img
+        {
+            padding-left: 100px;
+            float: left;
+        }
+    }
+}
+nav
+{
+    padding-left: 600px;
+    p
+    {
+        color: white;
+    }
+}
+li
+{
+    list-style: none;
+    text-align: right;
+    float: right;
+}
+.header-links
+{
+    
+}
+.header-links:visited, .header-links:link
+{
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    padding: 14px 70px;
+    text-align: center; 
+    font-family: "Georgia";
+    text-decoration: none;
+    display: inline-block;
+}
+.header-links:active, .header-links:hover
+{
+    text-decoration: underline;
+}
+img
+{
+    position: relative; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
