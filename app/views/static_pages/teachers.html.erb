@@ -1,0 +1,12 @@
+<h1>Find your teacher below! If you can't find your teacher, fill in the form below!</h1>
+ <%= form_for(:teachers, url: teachers_path) do |f| %>
+
+      <%= f.label :name %>
+      <%= f.name_field :name, class: 'form-control' %>
+
+      <%= f.label :class %>
+      <%= f.password_field :class, class: 'form-control' %>
+
+      <%= f.submit "Submit Teacher", class: "btn btn-primary" %>
+<% end %>
+

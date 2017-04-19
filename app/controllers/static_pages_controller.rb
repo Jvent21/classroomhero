@@ -15,4 +15,8 @@ class StaticPagesController < ApplicationController
   
   def contact_us
   end
+  
+  def teachers
+  end
+  
 end

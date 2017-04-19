@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'teachers/new'
+
   root "static_pages#home"
 
   get '/', to: 'static_pages#home'
@@ -6,6 +8,8 @@ Rails.application.routes.draw do
   get '/help', to: 'static_pages#help'
   
   get '/about', to: 'static_pages#about'
+  
+  get '/teachers', to: 'static_pages#teachersr'
 
   get '/signup', to: 'users#new'
   
@@ -19,7 +23,7 @@ Rails.application.routes.draw do
   
   resources :microposts,          only: [:create, :destroy]
   
-  resources :users
+  resources :users 
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
